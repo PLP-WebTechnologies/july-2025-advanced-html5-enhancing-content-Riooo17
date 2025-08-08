@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>User Registration</h1>
+        <nav>
+            <ul>
+                <li><a href="#personal">Personal Info</a></li>
+                <li><a href="#account">Account</a></li>
+                <li><a href="#preferences">Preferences</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="registration" method="post">
+            <!-- Personal Info Section with Lists -->
+            <section id="personal">
+                <h2>Personal Information</h2>
+                <ol>
+                    <li>
+                        <label>Full Name: <input type="text" required placeholder="First Last"></label>
+                    </li>
+                    <li>
+                        <label>Email: <input type="email" required></label>
+                    </li>
+                    <li>
+                        <label>Phone: <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="07xxxxxxxx"></label>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- Account Section with Table -->
+            <section id="account">
+                <h2>Account Details</h2>
+                <table border="1">
+                    <tr>
+                        <th>Field</th>
+                        <th>Requirements</th>
+                        <th>Input</th>
+                    </tr>
+                    <tr>
+                        <td>Username</td>
+                        <td>4-12 chars</td>
+                        <td><input type="text" required minlength="4" maxlength="12"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>8+ chars</td>
+                        <td><input type="password" required minlength="8"></td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Preferences Section with Media -->
+            <section id="preferences">
+                <h2>Preferences</h2>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li>
+                        <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+  <br>
+                        <img src="Handball.jpg" alt="Handball" width="200">
+                    </li>
+                    <br>
+                    <li>
+                        <label><input type="checkbox" name="interests" value="music"> Music</label>
+                        
+                    <ol type="I"> <li>Audio</li>
+
+                        <audio controls>
+                            <source src="BIEN - All My Enemies Are Suffering. (Official Music Video).mp3" type="audio/mpeg">
+                            Your browser doesn't support audio.
+                        </audio>
+                        <li>Video</li>
+                         <video width="300" controls>
+                    <source src="BIEN - All My Enemies Are Suffering. (Official Music Video).mp4" type="video/mp4">
+                    Your browser doesn't support video.
+                </video>
+                        </ol>
+                    </li>
+                </ul>
+
+                
+               
+            </section>
+
+            <button type="submit">Register</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Contact us at: <a href="briomondi116@gmail.com">briomondi116@gmail.com</a></p>
+    </footer>
+</body>
+</html>
